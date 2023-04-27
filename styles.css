@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.landing .landing__back-block {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background: #1e3777;
+  width: 100%;
+  height: 1024px;
+  border-radius: 0px 0px 600px 600px;
+}
+.landing .landing__nav {
+  padding: 0 60px;
+  width: 100%;
+  height: 140px;
+  background: rgba(0, 0, 0, 0.28);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0;
+  flex-wrap: no-wrap;
+}
+.landing .landing__logo {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: initial;
+  gap: 0;
+  flex-wrap: no-wrap;
+  color: #fff;
+}
+.landing .landing__logo--red {
+  color: #ff0000;
+}
+.landing .landing__list {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: initial;
+  gap: 23px;
+  flex-wrap: wrap;
+  color: #fff;
+  list-style: none;
+}
+.landing .landing__contact {
+  text-align: center;
+  width: 200px;
+  color: #fff;
+}
+.landing .landing__text {
+  position: relative;
+  top: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #fff;
+}
+.landing .landing__contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: no-wrap;
+  margin: 100px auto;
+  width: 358px;
+  height: 82px;
+  background: #FF0000;
+  border-radius: 50px;
+  transition: all 0.5s linear;
+}
+.landing .landing__contact-link:hover {
+  background: #fff;
+}
+.landing .landing__contact-link:hover a {
+  color: #ff0000;
+}
+.landing .landing__contact-link a {
+  text-decoration: none;
+  color: #fff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  transition: all 0.5s linear;
+}
+.landing .landing__card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 30px;
+  margin-top: 20px;
+}
+.landing .landing__card-container .landing__card {
+  padding: 80px 40px;
+  width: 608px;
+  height: 368px;
+  background: #d9d9d9;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.landing .landing__card-container .landing__card .landing__card-text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+}
+.landing .landing__card-container .landing__card--transparent {
+  background: rgba(217, 217, 217, 0.29);
+  border: 1px solid #ff0000;
+  justify-content: space-between;
+}
+.landing .landing__card-container .landing__card--transparent .landing__transaction {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+}
+.landing .landing__card-container .landing__card--transparent .landing__money {
+  padding: 10px 10px 10px 30px;
+  width: 406px;
+  height: 75px;
+  border: 1px solid #FF0000;
+  margin-left: 20px;
+}
+.landing .landing__card-container .landing__card--transparent .landing__money .landing__currency {
+  margin-left: 120px;
+  padding-left: 10px;
+}
+.landing .landing__card-container .landing__card--transparent .landing__money .landing__currency::before {
+  content: "";
+  width: 41px;
+  height: 10px;
+  border: 1px solid #000000;
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */
