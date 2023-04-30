@@ -242,16 +242,71 @@ body {
 .comments {
   margin-top: 100px;
   width: 100%;
+  position: relative;
+}
+.comments .fa-solid {
+  position: absolute;
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.3333333333);
+  top: 15%;
+  cursor: pointer;
+}
+.comments .fa-caret-left {
+  left: 240px;
+  animation: left 1s infinite ease-in-out;
+}
+.comments .fa-caret-right {
+  right: 250px;
+  animation: right 1s infinite ease-in-out;
+}
+@keyframes right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.comments .comments__nav-dots {
+  margin: 0 auto;
+  width: 500px;
+  text-align: center;
+  cursor: pointer;
+}
+.comments .comments__nav-dots :first-child {
+  color: #000;
+}
+.comments .comments__nav-dots .fa-circle {
+  position: initial;
+  font-size: 10px;
 }
 .comments .comments__container {
-  padding: 10px;
-  width: 800px;
+  position: relative;
+  width: 760px;
   height: 200px;
   margin: 0 auto;
+  overflow: hidden;
+  display: flex;
 }
 .comments .comments__container .comments__box {
-  width: 780px;
+  width: 800px;
   height: 100%;
+  padding: 20px;
+  white-space: nowrap;
 }
 .comments .comments__container .comments__box .comments__box-text {
   font-style: normal;

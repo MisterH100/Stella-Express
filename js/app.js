@@ -11,7 +11,7 @@ function loadPage(req, res){
 	fs.readFile('../index.html', function(err, data){   //getting the path and reading the contents of file
 		if(err){
 		res.writeHead(404);
-		res.write('Page not found');                   //displaying error
+		res.write('../404.html');                   //displaying error
 	 }else{
 		res.write(data);                              //displaying the file
 	 }
