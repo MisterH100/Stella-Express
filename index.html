@@ -4,36 +4,157 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="https://kit.fontawesome.com/a96931ab64.js" crossorigin="anonymous"></script>
     <title>Stella Express</title>
 </head>
 <body>
-  <section class="landing">
-     <div class="landing__back-block"></div>
+  <header class="header">
 	 
-     <nav class="landing__nav">
-	     <h1 class="landing__logo">STELLA<span class="landing__logo landing__logo--red">EXPRESS</span></h1>
-		 <ul class="landing__list">
-		     <li class="landing__item">Home</li>
-			 <li class="landing__item">Services</li>
-			 <li class="landing__item">Contact Us</li>
+     <nav class="header__nav">
+	     <h1 class="header__logo"><a href="#">STELLA<span class="hearder__logo header__logo--red">EXPRESS</span></a></h1>
+		 <ul class="header__list">
+		     <li class="header__item"><a href="#">Home</a></li>
+			 <li class="header__item"><a href="#">Services</a></li>
+			 <li class="header__item"><a href="#">Contact Us</a></li>
 		 </ul>
-		 <p class="landing__contact">+263 000 000 000</p>
+		 <p class="header__contact"><a href="#">+263 000 000 000</a></p>
 	 </nav>
+	 
+	</header>
+	
+	<section class="landing"> 
+	 <div class="landing__back-block"></div>
 	 
 	 <p class="landing__text">Fast, Reliable and Trusted Money Transfer Service From<br> SA to Zimbabwe and Zimbabwe to SA</p>
 	 
 	 <p class="landing__contact-link"><a href="#">Get in touch</a></p>
 	 <div class="landing__card-container">
-	     <div class="landing__card">
+	     <article class="landing__card">
 	         <h2 class="landing__card-text">Deposit money at:<br>Address</h2>
 			 <h2 class="landing__card-text">Collect money at:<br>Address</h2>
-	     </div>
-	     <div class="landing__card landing__card--transparent">
+	     </article>
+	     <article class="landing__card landing__card--transparent">
 		     <h2 class="landing__transaction">You send: <span class="landing__money"><span class=landing__amount">1000</span><span class="landing__currency">ZAR</span></span></h2>
-			 <h2 class="landing__transaction"> They get: <span class="landing__money"><span class=landing__amount">900</span><span class="landing__currency">ZAR</span></span></h2>
-	     </div>
+			 <h2 class="landing__transaction"> They get: <span class="landing__money"><span class=landing__amount">900</span><span class="landing__currency landing__currency--get">ZAR</span></span></h2>
+	     </article>
 	 </div> 
   </section>
+  
+  <section class="main">
+     <p class="main__text">A full solution for those who want to move their money, pay their offshore<br> bills, Buy and send groceries for loved ones in Zimbabwe.</p>
+	 <div class="main__container">
+	     <article class="main__card">
+		     <img src="assets/image 2money.png" class="main__card-image"/>
+			 <p class="main__card-text">Send/Receive Money</p>
+		 </article>
+		 <article class="main__card">
+		     <img src="assets/image 3slip.png" class="main__card-image main__card-image--slip"/>
+			 <p class="main__card-text main__card-text--slip">DSTV Subscriptions</p>
+		 </article>
+		 <article class="main__card">
+		     <img src="assets/image 4groceries.png" class="main__card-image main__card-image--groceries"/>
+			 <p class="main__card-text main__card-text--groceries">Buy Groceries</p>
+		 </article>
+		 <article class="main__card">
+		     <img src="assets/image 5pay.png" class="main__card-image"/>
+			 <p class="main__card-text main__card-text--payments">Avon, Inuka and<br> Utherford payments</p>
+		 </article>
+		 <article class="main__card">
+		     <img src="assets/image 2money.png" class="main__card-image"/>
+			 <p class="main__card-text">DSTV Installation and<br> Sales</p>
+		 </article>
+		 <article class="main__card">
+		     <img src="assets/image 2money.png" class="main__card-image"/>
+			 <p class="main__card-text">Transportation of<br> Goods and Passangers</p>
+		 </article>
+		 <article class="main__card">
+		     <img src="assets/image 2money.png" class="main__card-image"/>
+			 <p class="main__card-text">Airtime and<br> Electricity Tokens</p>
+		 </article>
+
+	 </div>
+  </section>
+  
+  <section class="comments">
+        <div class="comments__container">
+           <article class="comments__box">
+	         <p  class="comments__box-text">“Stella Express is very reliable and fast in money<br> transfers. Entrust them with your money and have a peace of mind knowing that it will reach the correct destination.“</p>
+		 
+		     <h5 class="comments__user">Ncube M</h5>
+	        </article>
+	        <!--<article class="comments__box">
+	         <p  class="comments__box-text">“Stella Express is very reliable and fast in money<br> transfers. Entrust them with your money and have a peace<br> of mind knowing that it will reach the correct destination.“</p>
+		 
+		      <h5>Ncube M</h5>
+	        </article>
+	        <article class="comments__box">
+	         <p  class="comments__box-text">“Stella Express is very reliable and fast in money<br> transfers. Entrust them with your money and have a peace<br> of mind knowing that it will reach the correct destination.“</p>
+		 
+		      <h5>Ncube M</h5>
+	        </article>
+	        <article class="comments__box">
+	         <p  class="comments__box-text">“Stella Express is very reliable and fast in money<br> transfers. Entrust them with your money and have a peace<br> of mind knowing that it will reach the correct destination.“</p>
+		 
+		      <h5>Ncube M</h5>
+	        </article>
+	        <article class="comments__box">
+	         <p  class="comments__box-text">“Stella Express is very reliable and fast in money<br> transfers. Entrust them with your money and have a peace<br> of mind knowing that it will reach the correct destination.“</p>
+		 
+		      <h5>Ncube M</h5>
+	        </article>
+	        <article class="comments__box">
+	         <p  class="comments__box-text">“Stella Express is very reliable and fast in money<br> transfers. Entrust them with your money and have a peace<br> of mind knowing that it will reach the correct destination.“</p>
+		 
+		      <h5>Ncube M</h5>
+	        </article>-->
+
+		</div>
+		
+		<div class="stats">
+		 <div class="stats__partners">
+		     <h1 class="stats__number">10+</h1>
+			 <p class="stats__text">Partner businesses</p>
+		 </div>
+		  <div class="stats__transfers">
+		     <h1 class="stats__number">100+</h1>
+			 <p class="stats__text">Money transfer Clients</p>
+		 </div>
+		  <div class="stats__dstv">
+		     <h1 class="stats__number">150+</h1>
+			 <p class="stats__text">DSTVs Sold and Installed</p>
+		 </div>
+		  <div class="stats__products">
+		     <h1 class="stats__number">200+</h1>
+			 <p class="stats__text">Avon, Inuka and Utherford<br> clients</p>
+		 </div>
+
+		</div>
+  </section>
+  
+  
+   <footer class="footer">
+     <div class="footer__links">
+	     <h2 class="footer__heading">LINKS</h2>
+		 <hr>
+	     <a href="#">About Us</a>
+		 <a href="#">Services</a>
+		 <a href="#">Privacy Policy</a>
+		 <a href="#">Contact Us</a>
+	 </div>
+	 <div class="footer__help">
+	     <h2 class="footer__heading">GET HELP</h2>
+		 <hr>
+	     <a href="#">FAQ</a>
+		 <a href="#">Customer Care</a>
+		 <a href="#">Terms and Conditions</a>
+	 </div>
+	 <div class=footer__socials>
+	     <h2 class="footer__heading">OUR SOCIALS</h2>
+		 <hr>
+	     <i class="fa-brands fa-twitter">   <a href="#">Twitter</a></i>
+		 <i class="fa-brands fa-facebook">  <a href="#">Facebook</a></i>
+		 <i class="fa-brands fa-instagram">  <a href="#">Instagram</a></i>
+	 </div>
+   </footer>
 </body>
