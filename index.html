@@ -9,10 +9,13 @@
     <title>Stella Express</title>
 </head>
 <body>
+<div class="loader"></div>
+
   <header class="header">
 	 
      <nav class="header__nav">
 	     <h1 class="header__logo"><a href="#">STELLA<span class="hearder__logo header__logo--red">EXPRESS</span></a></h1>
+		 <p class="logo-slogan">We make it easy.</p>
 		 <ul class="header__list">
 		     <li class="header__item"><a href="#">Home</a></li>
 			 <li class="header__item"><a href="#">Services</a></li>
@@ -77,8 +80,8 @@
   </section>
   
   <section class="comments">
-        <i class="fa-solid fa-caret-left"></i>
-		<i class="fa-solid fa-caret-right"></i>
+        <i class="fa-solid fa-caret-left" id="left"></i>
+		<i class="fa-solid fa-caret-right" id="right"></i>
         <div class="comments__container">
 			
            <article class="comments__box">
@@ -168,4 +171,5 @@
 		 <i class="fa-brands fa-instagram">  <a href="#">Instagram</a></i>
 	 </div>
    </footer>
+   <script src="js/script.js"></script>
 </body>

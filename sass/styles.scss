@@ -26,10 +26,59 @@ $accents: #f00;
 	 background: $secondary;
 	}
 	
+	.loader{
+	 position: fixed;
+	 z-index: 100;
+	 width: 100%;
+	 height: 100%;
+	 background: #000000;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	    
+		
+		&::after{
+		 content:"STELLAEXPRESS";
+	     color: $accents;
+		 font-weight: 700;
+         font-size: 30px;
+		 animation: pulse 2s infinite;
+		 
+		}
+		
+		&::before{
+		 position: fixed;
+		 content:"we make it easy";
+		 color: #fff;
+		 left: 618px;
+		 top: 330px;
+		 animation: pulse 2s infinite;
+		}
+	}
+	
+	.loader-hidden{
+	 display: none;
+	}
+	
+	@keyframes pulse{
+	 0%{
+	  opacity: 10%;
+	 }
+	 
+	 50%{
+	  opacity: 80%;
+	 }
+	 
+	 100%{
+	  opacity: 10%;
+	 }
+	}
+	
 	.header{
 	  width: 100%;
 	  
 	   .header__nav{
+	     position: relative;
          padding: 0 60px;
          width: 100%;
          height: 140px;
@@ -40,7 +89,20 @@ $accents: #f00;
 		     text-decoration: none;
 			 color: #fff;
 		    } 
+			
+			.logo-slogan{
+			 position: absolute;
+			 bottom: 30px;
+			 left: 170px;
+			 color: #fff;
+			 opacity: 0;
+			 transition: all 0.5s ease-in-out;
+			}
         }
+        
+		.header__nav:has(.header__logo:hover) .logo-slogan{
+		 opacity: 100%;
+		}
  
         .header__logo{
          font-weight: 700;
@@ -48,12 +110,14 @@ $accents: #f00;
          line-height: 58px;
          @include flex(initial, 0, nowrap);
          color: #fff;
+		 	
         }
+		
  
         .header__logo--red{
          color: $accents;
         }
- 
+        
         .header__list{
           position: relative;
          @include flex(initial, 23px, wrap);
@@ -63,13 +127,58 @@ $accents: #f00;
         }
  
         .header__item{
-  
+           position: relative;
+		   transition: all 1s;
+		   
+		    &::before{
+			 position: absolute;
+			 content: "";
+			 bottom: -4px;
+			 background: $accents;
+			 border-radius: 2px;
+			 height: 2px;
+			 width: 0;
+			 transition: width 1s;
+		    }
+			
+			& :hover{
+			  color: $accents;
+			  transition: all 0.5s;
+			}
+			
+			&:hover::before{
+			 width: 100%;
+			 transition: width 0.5s;
+			}
         }  
  
         .header__contact{
+		 position: relative;
          text-align: center;
-         width: 200px;
          color: #fff;
+		 transition: all 1s;
+		    
+			
+			&::before{
+			 position: absolute;
+			 content: "";
+			 bottom: -4px;
+			 background: $accents;
+			 border-radius: 2px;
+			 height: 2px;
+			 width: 0;
+			 transition: width 1s;
+		    }
+			
+			& :hover{
+			  color: $accents;
+			  transition: all 0.5s;
+			}
+			
+			&:hover::before{
+			 width: 100%;
+			 transition: width 0.5s;
+			}
         }
  
 	}
@@ -276,6 +385,7 @@ $accents: #f00;
 	    }
 	
         .fa-caret-left{
+		 display: none;
 		 left: 240px;
 		 animation: left 1s infinite ease-in-out;
 		}
@@ -316,7 +426,11 @@ $accents: #f00;
          cursor: pointer;
 		    & :first-child{
 		     color: #000;
+		   } 
+		   .dot-active{
+		     color:#000;
 		   }
+		   
 			.fa-circle{
 		     position: initial;
 		     font-size: 10px;
@@ -330,7 +444,7 @@ $accents: #f00;
 		 margin: 0 auto;
 		 overflow: hidden;
 		 display: flex;
-		   
+		 scroll-behavior: smooth;
 		    
 		  .comments__box{
 		     width: 800px;
